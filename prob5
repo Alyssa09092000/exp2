@@ -1,0 +1,21 @@
+//A program that will “count” numbers, separated by commas, up to 10. And when it reaches 10, count by 2s until you reach 30.
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int main ()
+{
+	int counter;
+	
+	cout << "Counting from 0 - 30... \n\n" ;
+	
+	for (counter=1;counter<=10;counter++)
+	cout << counter << ", " ;
+	for (counter=12;counter<=30;counter+=2)
+	cout << counter << ", " ;
+
+
+_getch();
+return 0;
+}
