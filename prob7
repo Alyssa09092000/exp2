@@ -1,0 +1,33 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int main()
+{
+    int y, z;
+	y = 0;
+	z = 0;
+
+	cout << "Enter a whole number: ";
+    cin >> y;
+    
+while (y>0)
+	{
+		for (int b = 1; b <= y; b++) 
+   		{
+        z += b;
+    	}
+	 cout << "\nThe sum of a whole number from 1 to "<< y << " is " << z << ".";
+	 cout << "\n\nEnter any number: ";
+    cin >> y;
+    z = 0;
+	}
+
+while(y != 0 && y <= 0)
+{
+
+    cout<<"THANK YOUUU!";
+    break;
+}
+    return 0;
+}
