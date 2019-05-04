@@ -1,0 +1,40 @@
+#include <iostream>
+#include <conio.h>
+using namespace std; 
+
+int main ()
+{
+	double waterC, unpaidbill, total, water, wtrcharge, ltcharge; 
+	wtrcharge = 35;
+	ltcharge = 20;
+	 
+	cout << "HI! WE ARE NOW GOING TO COMPUTE YOUR WATER BILL! \n\n";
+	
+	cout << "Enter the Gallons of Water Consumed on the previous Month: ";
+	cin >> water ;
+	
+	cout << "Enter the Gallons of Water Recently Consumed: ";
+	cin >> waterC ;
+	
+	cout << "Unpaid Balance: ";
+	cin >> unpaidbill;
+	
+	if (unpaidbill > 0)
+	{
+		waterC = water * 1.10;
+		total = wtrcharge + waterC + unpaidbill + ltcharge;
+		cout << "Total Water Bill Is: P " << total << "\n\n" ;
+	}
+	
+	else 
+	{
+		waterC = water * 1.10;
+		total = wtrcharge + waterC;
+		cout << "Your Total Water Bill Is: P " << total << "\n\n" ;
+	}
+			
+			cout << "THANK YOUUU!!" ;
+	
+	_getch ();
+	return 0;
+}
